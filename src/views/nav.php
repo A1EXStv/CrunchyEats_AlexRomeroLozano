@@ -45,10 +45,10 @@
 
                 <!-- Icons -->
                 <div class="nav-icons ms-auto">
-                    <a href="#" class="nav-icon" title="Mi cuenta">
+                    <a href="<?php echo isset($_SESSION['usuario']) ? 'index.php?controller=Usuario&action=perfil' : 'index.php?controller=Auth&action=login'; ?>"  class="nav-icon" title="Mi cuenta">
                         <i class="fas fa-user"></i>
                     </a>
-                    <a href="#" class="nav-icon" title="Carrito">
+                    <a href="<?php echo isset($_SESSION['usuario']) ? 'index.php?controller=Carrito&action=ver' : 'index.php?controller=Auth&action=login'; ?>"  class="nav-icon" title="Carrito">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
                 </div>

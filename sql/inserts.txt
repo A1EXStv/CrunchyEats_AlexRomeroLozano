@@ -1,0 +1,142 @@
+ALTER TABLE series
+ADD COLUMN imagen VARCHAR(255) AFTER nombre;
+
+INSERT INTO series (nombre, imagen) VALUES
+('Attack on Titan', 'public/img/series/attack_on_titan.png'),
+('Captain Tsubasa', 'public/img/series/captain_tsubasa.png'),
+('Chainsaw Man', 'public/img/series/chainsaw_man.png'),
+('Demon Slayer', 'public/img/series/demon_slayer.png'),
+('Doraemon', 'public/img/series/doraemon.png'),
+('Dragon Ball Z', 'public/img/series/dragon_ball_z.png'),
+('Los Diarios de la Boticaria', 'public/img/series/los_diarios_de_la_boticaria.png'),
+('Digimon', 'public/img/series/digimon.png'),
+('My Dress Up Darling', 'public/img/series/my_dress_up_darling.png'),
+('Evangelion', 'public/img/series/evangelion.png'),
+('Frieren', 'public/img/series/frieren.png'),
+('Initial D', 'public/img/series/initial_d.png'),
+('Jujutsu Kaisen', 'public/img/series/jujutsu_kaisen.png'),
+('Kaiju N8', 'public/img/series/kaiju_n8.png'),
+('Lycoris Recoil', 'public/img/series/lycoris_recoil.png'),
+('Naruto', 'public/img/series/naruto.png'),
+('La Nobleza de las Flores', 'public/img/series/la_nobleza_de_las_flores.png'),
+('One Punch Man', 'public/img/series/one_punch_man.png'),
+('One Piece', 'public/img/series/one_piece.png'),
+('Pokémon', 'public/img/series/pokemon.png'),
+('Yu Yu Hakusho', 'public/img/series/yu_yu_hakusho.png');
+
+
+
+
+
+INSERT INTO categorias (nombre, descripcion, Activa) VALUES
+('Comida', 'Platos principales y acompañamientos', 1),
+('Bebida', 'Bebidas y refrescos', 1),
+('Salsas', 'Salsas y aderezos', 1);
+
+
+
+
+
+
+CrunchyEats_AlexRomeroLozano/public/img/series/
+\n
+
+
+
+
+INSERT INTO productos 
+(id_categoria, id_serie, nombre, descripcion, precio, activo, imagen)
+VALUES
+(1, 1, 'Shingeki no Ramen', 'Un plato tan intenso y lleno de determinación como la lucha por la supervivencia de la humanidad. Este ramen de miso oscuro (el Muro que protege) se sirve con un potente caldo de cerdo o pollo (el Rugido del Titán).\nIncluye: Rodajas de tierno roast beef (la Carne de Titán), crujientes trozos de pollo frito (la Espada Afilada), un huevo Ajitsuke Tamago perfectamente cocido (la Esperanza), y cubos de tofu firme (la Piedra de Eren). Decorado con alga nori, que representa la Bandera del Cuerpo de Exploración. ¡Una comida para recuperar fuerzas antes de la próxima misión!', 14.50, 1, 'public/img/productos/AOT_1.png'),
+(1, 1, 'Ramen del Retumbar', 'Un plato que resuena con la sensación de peligro inminente y las huellas de la devastación. Aunque los sabores son los mismos que dan fuerza al Cuerpo de Exploración, la presentación habla de la amenaza de los Titanes Fundadores y la marcha imparable.\nSabor y Textura: El caldo de miso oscuro y profundo ofrece un sabor reconfortante y potente. Los trozos de roast beef y pollo crujiente (el suministro de alta energía de la Legión) contrastan con el huevo tierno y el tofu suave. La decoración del cuenco con las pisadas de los Titanes transforma esta comida básica en un sombrío recordatorio de la misión. Es una comida robusta, necesaria para quienes cargan con el peso del destino.', 14.50, 1, 'public/img/productos/AOT_2.png'),
+(1, 2, 'Tiger Shot Ramen', 'Un ramen de shōyu (salsa de soja) inspirado en la energía inagotable de Tsubasa Ozora y el espíritu competitivo del equipo de Nankatsu.\nEste plato presenta un caldo rico y oscuro que simula la sombra rápida del "Drive Shot". Incluye láminas de Chashu de cerdo tierno, dos mitades de huevo ajitsuke con la yema melosa, brotes de bambú (menma) y dos rebanadas de Narutomaki con el espiral rosa que recuerdan el dinamismo en el campo de juego. Rematado con un alga nori, lista para ser el estandarte de la victoria. Es el combustible ideal para ganar cualquier campeonato.', 12.95, 1, 'public/img/productos/OyB_1.png');
+(1, 2, 'Ramen del Campo Celeste', 'Este plato celebra el espíritu inquebrantable del equipo Nankatsu S.C., donde cada ingrediente representa un jugador y cada sabor un gol.\nServido en el vibrante bol azul de la equipación local, este ramen presenta un caldo Shio claro y reconfortante. Contiene fideos hakata firmes, láminas de Chashu de cerdo de primera calidad, y dos huevos Ajitsuke para recargar energías. El Narutomaki en espiral simboliza la trayectoria de un tiro curvo hacia la portería. Es el plato de recarga perfecto que une al equipo antes de la prórroga.', 1.50, 1, 'public/img/productos/OyB_2.png');
+(1, 3, 'Chainsaw Devil Ramen', 'Un ramen con una base oscura de caldo kuro (negro), espeso y potente, que representa la sangre y la oscuridad de los cazadores de demonios.\nEl Combustible de Denji: Tres láminas gruesas de Rosbif de res a medio cocer, simulando la carne que Denji ansía comer.\nLa Transformación: Un bloque grande de tofu frito crujiente (agedashi o similar), que aporta textura y un color rojo oscuro que evoca la motosierra y la sangre.\nPochita y los Compañeros: Dados de tofu fresco bañados en el caldo, que representan a Pochita y la fragilidad y humanidad de los cazadores.\nToques de Peligro: La cebolla morada y el huevo Ajitsuke de yema oscura completan este plato intenso y visualmente audaz.\nEste ramen es una prueba de que, para sobrevivir en el mundo de los demonios, se necesita una comida tan fuerte y contundente como un golpe de motosierra.', 13.80, 1, 'public/img/productos/Chainsaw_1.png');
+(1, 3, 'Pochita Ramen', 'Un ramen que captura el lado más entrañable y juguetón del mundo de Chainsaw Man, centrado en el Demonio Motosierra, Pochita.\nColor y Forma: Servido en un bol naranja brillante con el borde en forma de sierra, evocando la tierna forma de Pochita.\nEl Manjar: Un caldo de miso rojizo y potente, coronado con láminas de Rosbif de res de primera calidad.\nToques de Amistad: Se incluyen dados de tofu fresco (la inocencia de Pochita), cebolla morada y cebolla frita crujiente para un contraste de textura.\nEl Toque Cómico: Se añaden dos rebanadas de Narutomaki en espiral, un elemento más ligero y clásico que refleja los deseos sencillos de Denji.\nEste plato es el equilibrio perfecto entre la potencia de un demonio y la comodidad de una buena comida, el mismo equilibrio que Denji encuentra al lado de Pochita.', 13.80, 1, 'public/img/productos/Chainsaw_2.png');
+(1, 4, 'Kamado Ramen', 'Este ramen simboliza la unión y la fuerza de los hermanos Tanjiro y Nezuko, el vínculo que les permite enfrentar a los demonios.\nEl Recipiente: El bol combina los patrones de los uniformes de los protagonistas: el damero verde y negro de Tanjiro y el patrón rosado del kimono de Nezuko.\nLa Respiración del Agua: Un caldo de miso rojizo y profundo, que evoca la intensidad de la lucha.\nEl Coraje: Las láminas de carne de res tierna y el huevo ajitsuke aportan la proteína y energía esenciales del Cuerpo de Exterminio de Demonios.\nLa Danza del Dios del Fuego: El centro del plato está coronado con dos Langostinos fritos (Ebi-Fry) crujientes, que simulan la forma de la katana de Tanjiro en acción.\nArmonía y Magia: Se añade espinaca fresca y narutomaki para dar color y frescura al plato, recordando el espíritu de Nezuko.\nUn plato que combina fuerza y sabor, perfecto para recargar energías antes de la misión.', 15.00, 1, 'public/img/productos/DemonSlayer_1.png');
+(1, 4, 'Ramen del Pilar del Agua', 'Un plato que encarna la fuerza silenciosa y la técnica perfecta de Giyū Tomioka, el Pilar del Agua.\nEl Diseño: El bol combina el profundo color borgoña de su uniforme con el característico patrón geométrico de su haori, símbolo de su conexión con el pasado y su determinación.\nTécnica del Décimo Formulario: Un caldo Shōyu fuerte y limpio, representando la pureza de la Respiración del Agua.\nEl Corte Preciso: Las láminas de carne de res son un guiño a su habilidad con la katana, siempre con cortes limpios y letales.\nLangostinos de la Danza Acuática: Los dos Langostinos fritos (Ebi-Fry) crujientes en el centro simulan el movimiento fluido y poderoso de sus ataques.|nCalma y Enfoque: El huevo ajitsuke, las espinacas frescas y el narutomaki aportan equilibrio y color, recordando la serenidad de Giyū incluso en el fragor de la batalla.|nEste ramen es tan reconfortante como un chorro de agua fresca, ideal para un guerrero que nunca muestra su debilidad.', 15.00, 1, 'public/img/productos/DemonSlayer_2.png');
+(1, 5, 'El Ramen Cósmico', 'Un plato que combina lo clásico con lo inesperado, celebrando el origen futurista y las aventuras interdimensionales de Doraemon, el gato robot del futuro.\nEl Bolso Interdimensional: El recipiente es una réplica del cuerpo de Doraemon, con sus colores característicos, franjas rojas y la icónica campana dorada.\nBase Terrestre: Un reconfortante caldo de Shōyu/Shio con fideos de ramen tradicionales. Incluye láminas de Chashu de cerdo, huevos ajitsuke y narutomaki para una experiencia clásica y familiar.\nEl Manjar Futurista: En el centro, coronando el plato, se encuentra el ingrediente estrella y favorito del gato robot: un auténtico Dorayaki (dos pequeños panqueques dulces rellenos de anko o pasta de judía roja), que aporta una sorpresa de sabor dulce al plato salado, simulando un "viaje" inesperado.\nEste ramen es un portal de sabor, una aventura culinaria que te transporta a través del tiempo y el espacio.', 12.75, 1, 'public/img/productos/Doraemon.png');
+(1, 6, 'Ramen Super Saiyajin', 'Un ramen con una potencia y un sabor que te cargan de Ki instantáneo, perfecto para un Saiyajin después de un entrenamiento intenso en la Cámara del Tiempo Hiperbólico.\nEl Aura: El bol naranja con el aura de rayos explosivos representa la transformación Super Saiyajin, y el símbolo de "Go" (悟) te recuerda el camino del Maestro Roshi.\nLa Proteína del Saiyajin: Tres gruesas láminas de Rosbif de res de primera calidad, el combustible esencial para la fuerza.\nLa Esfera del Dragón: El huevo ajitsuke con la yema dorada y perfecta, simboliza la Bola de Dragón, mientras que el caldo cremoso (posiblemente Tonkotsu) representa la energía concentrada.\nVelocidad y Crujido: El toque crujiente de la cebolla frita y la cebolla morada añade la sensación explosiva de un ataque definitivo.\n¡Este ramen es el único que puede saciar el apetito de un guerrero de clase alta!', 12.75, 1, 'public/img/productos/Dbz_1.png');
+(1, 6, 'Ramen Modo Berserker', 'Un ramen que representa el poder desenfrenado y la furia de un guerrero Saiyajin que ha trascendido sus límites, inspirado en los estados de máxima potencia de Dragon Ball Z.\nLa Transformación Oscura: El bol negro con los rayos rojos simula el aura de energía oscura, como el Super Saiyan Rage o la liberación total de poder.\nEl Corazón del Luchar: El toque artístico central es una rosa esculpida de carne asada, simbolizando la belleza y la brutalidad de la batalla Saiyajin.\nBase de Poder: Un caldo Tonkotsu espeso y cremoso, saturado de sabor para una recarga de energía masiva.\nCombustible Supremo: Gruesas láminas de Rosbif de res, huevos ajitsuke de yema perfecta, cebolla frita crujiente y cilantro que otorgan un sabor complejo y potente.\nEste plato es solo para aquellos que están listos para desatar su máximo potencial.', 12.75, 1, 'public/img/productos/Dbz_2.png');
+(1, 7, 'El Ramen de Maomao', 'Un ramen que encarna la precisión, el refinamiento y el conocimiento herbal de Maomao, la boticaria del Palacio Interior.\nEl Recipiente: El cuenco de porcelana fina, con su diseño floral azul y su borde dorado, refleja la elegancia y el misterio de la corte imperial. El símbolo del mortero asegura su origen boticario.\nCaldo de la Fórmula: Un caldo de Shio (salado) o de dashi claro y limpio, que proporciona una base sutil para resaltar los ingredientes selectos.\nEl Pato Medicinal (Kamo): Finas láminas de Pechuga de pato (Kamo) asada, que añaden un sabor umami profundo, un ingrediente más exclusivo que el cerdo.\nToques Herbales: El plato se adorna con bayas de goji (un guiño a la botánica y las medicinas chinas) y semillas de sésamo negro, evocando los ingredientes que Maomao utiliza en sus experimentos.\nLa Perfección del Huevo: Un huevo Ajitsuke de cocción perfecta y el narutomaki añaden el equilibrio visual y nutricional a esta "receta" perfectamente balanceada.\nEste plato es tan cuidadosamente preparado como una de las mezclas de Maomao, ofreciendo un sabor tan intrigante como un misterio de la corte.', 17.90, 1, 'public/img/productos/DiariosBoticaria_1.png');
+(1, 7, 'El Ramen del Palacio Interior', 'Este plato evoca el lujo discreto y los secretos bien guardados de la Corte Imperial, sirviendo una receta digna de las consortes, con toques sutiles de la sabiduría herbal de la boticaria.\nRefinamiento Imperial: Se presenta en un cuenco de porcelana fina con bordes dorados y un delicado patrón floral azul, reflejando la belleza y la fragilidad del Palacio Interior.\nCaldo de la Boticaria: Un caldo dashi claro y selecto, preparado con precisión, que proporciona una base sutil y aromática para los ingredientes más finos.\nIngrediente de Nobleza: Finas láminas de Pechuga de pato (Kamo) asada y tierna, un ingrediente más exclusivo y refinado que el cerdo.\nToques Terapéuticos: El plato está adornado con bayas de goji y semillas de sésamo negro, simulando los aditivos herbales que equilibran el plato, mostrando que la medicina y la cocina caminan de la mano en el palacio.\nArmonía Visual: El huevo Ajitsuke de yema perfecta y el narutomaki aportan el equilibrio cromático y la armonía visual requerida en un plato de alta alcurnia.\nEs una mezcla sutil de sabor y conocimiento, tan intrigante y hermoso como los misterios que Maomao resuelve en la corte.', 17.90, 1, 'public/img/productos/DiariosBoticaria_2.png');
+(1, 8, 'Ramen de la Digievolución', 'Un ramen que encarna el espíritu de la amistad y la potencia necesaria para la Digievolución, inspirado en las aventuras de los Niños Elegidos en el Mundo Digital.\nEl Digivice: El bol negro presenta un circuito digital y el Digivice D-3, que te conecta con tu compañero Digimon y el mundo virtual.\nLa Base de la Amistad: Un caldo de Shōyu/Miso clásico, reconfortante y familiar, que simboliza la calidez y el apoyo del equipo.\nLa Energía Necesaria: Tres gruesas láminas de Chashu de cerdo tierno, y dos huevos Ajitsuke de yema melosa, que representan el impulso de energía vital para alcanzar el nivel Ultra o Mega.\nFlora Digital: Los vegetales verdes y, especialmente, las rodajas de zanahoria con forma de estrella/flor son un guiño a la flora única del Mundo Digital.\nLa Conexión: El Narutomaki en espiral simboliza la conexión en constante evolución entre los Niños Elegidos y sus Digimon.\nEste es el plato de recarga perfecto después de una intensa batalla contra Devimon o Myotismon.', 14.50, 1, 'public/img/productos/Digimon_1.png');
+(1, 8, 'Agumon Ramen', 'Un plato intenso y poderoso inspirado directamente en Agumon y su técnica "Flama Bebé" (Baby Flame), que te da el impulso para digievolucionar.\nEl Contenedor: El bol naranja con rayas negras y el símbolo de Agumon recrean perfectamente al Digimon de nivel Novato.\nCaldo de Fuego: Un caldo de Miso o Tan Tan Picante, de color rojo intenso, que evoca el calor de la Flama Bebé y el espíritu ardiente de Agumon.\nLa Proteína del Guerrero: Los trozos crujientes de Pollo Frito (Tori Karaage) sustituyen a la carne de cerdo, representando la ferocidad en el combate y proporcionando una textura increíblemente satisfactoria.\nLa Recarga de Energía: Los huevos Ajitsuke, el Narutomaki y los vegetales con forma de estrella/flor completan este plato, asegurando que tu compañero Digimon esté listo para alcanzar su nivel Campeón.\nEste ramen es una explosión de sabor que te prepara para cualquier batalla en el Mundo Digital.', 14.50, 1, 'public/img/productos/Digimon_2.png');
+(1, 9, 'El Ramen Cosplay Perfecto', 'Un plato que celebra la belleza, el detalle artesanal y la chispa creativa de Marin Kitagawa y Wakana Gojo.\nLa Estética Kawaii: El bol inmaculado con su patrón de conejitos refleja la adoración de Marin por el shojo y la cultura kawaii.\nEl Trabajo de Gojo: El elemento central es la hermosa rosa esculpida (probablemente de rábano teñido o pasta de pescado), que simboliza la atención al detalle y el esfuerzo artesanal de Gojo al coser.\nEl Color de la Pasión: Un caldo Tonkotsu cremoso y claro, que es el lienzo ideal para los ingredientes coloridos, representando la pasión por el cosplay.\nEl Cuerpo del Personaje: Láminas de Chashu de cerdo suaves, espinacas frescas y un huevo ajitsuke con la yema dorada, que aportan la energía y la nutrición necesarias para largas sesiones de costura y fotografía.\nEste ramen es una obra de arte culinaria, tan satisfactoria de ver como de comer, tal como un cosplay hecho a la perfección.', 13.60, 1, 'public/img/productos/DressUpD_1.png');
+(1, 9, 'Ramen de la Declaración Secreta', 'Un plato tierno y visualmente atractivo que simboliza los sentimientos florecientes y el toque de romanticismo que se desarrolla entre Marin Kitagawa y Wakana Gojo.\nEl Romanticismo: El cuenco de un delicado rosa pastel y la decoración kawaii evocan el ambiente de una cita dulce y las fantasías shojo de Marin.\El Corazón del Artesano: La rosa esculpida en el centro, de un color rojo vibrante, representa el corazón de Gojo que se abre y la pasión que pone en la costura, inspirada por Marin.\nLa Suavidad del Encuentro: Un caldo Tonkotsu cremoso y sutilmente dulce, que es la base perfecta para una comida reconfortante y delicada.\nEquilibrio Perfecto: El tierno Chashu de cerdo, la espinaca y los huevos ajitsuke añaden el balance de sabores y texturas, reflejando el equilibrio que Marin y Gojo encuentran juntos.\nEste ramen es tan reconfortante y esperanzador como la promesa de un amor que florece mientras se persiguen sueños compartidos.', 13.60, 1, 'public/img/productos/DressUpD_2.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');
+(1, NULL, 'Salsa Picante', 'Salsa picante para acompañar cualquier plato', 1.50, 1, 'public/img/productos/salsa_picante.png');

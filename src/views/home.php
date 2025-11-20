@@ -15,151 +15,52 @@
     <?php include __DIR__ . '/nav.php'; ?>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1600&h=600&fit=crop'); background-size: cover; background-position: center;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 text-center">
-                    <div class="discount-badge">
-                        <div class="percentage">20%</div>
-                        <div style="font-size: 12px;">DE DSCTO</div>
-                    </div>
-                    <h1 class="display-4 fw-bold mb-3">Descuentos Navideños</h1>
-                    <h2 class="h3 mb-4">Un 20% de descuento en nuestros Todos navideños</h2>
-                    <button class="btn btn-orange btn-lg">Descubrir más</button>
-                </div>
-            </div>
-        </div>
+    <section class="hero-section">
+        <img src="/CrunchyEats_AlexRomeroLozano/public/img/primera_imagen_home.png" alt="Imagen publicidad">
     </section>
 
     <!-- Products Section -->
     <section class="py-5">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="cabecera-products-section mb4">
                 <h2>Descuentos Navideños</h2>
                 <a href="#" class="text-decoration-none">Ver todo →</a>
             </div>
             
             <!-- Carousel -->
             <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo NARUTO</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor naranja</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo ONEPIECE</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor carne</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo BLEACH</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor pollo</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo DRAGONBALL</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor cerdo</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo KIMETSU</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor camarón</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo EVANGELION</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor res</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo HUNTER</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor miso</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="product-card">
-                                    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                                    <div class="product-info">
-                                        <h5>Combo JUJUTSU</h5>
-                                        <p class="small mb-2">Fideos Instantáneos sabor curry</p>
-                                        <div class="product-price">$8.00</div>
-                                        <button class="btn-add-cart">Añadir al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="carousel-inner">
+        <?php
+        $chunks = array_chunk($productos, 4); // Cada slide 4 productos
+        foreach ($chunks as $index => $slide) {
+            $active = $index === 0 ? 'active' : '';
+            echo "<div class='carousel-item $active'><div class='row'>";
+            foreach ($slide as $producto) {
+                echo "
+                <div class='col-md-3 col-sm-6'>
+                    <div class='product-card'>
+                        <img src='{$producto['imagen']}' alt='{$producto['nombre']}' class='product-image'>
+                        <div class='product-info'>
+                            <h5>{$producto['nombre']}</h5>
+                            <p class='small mb-2'>{$producto['descripcion']}</p>
+                            <div class='product-price'>\${$producto['precio']}</div>
+                            <button class='btn-add-cart'>Añadir al carrito</button>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Controles del carousel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-                
-                <!-- Indicadores -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
-                </div>
-            </div>
-        </div>
+                ";
+            }
+            echo "</div></div>";
+        }
+        ?>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
     </section>
 
     <!-- Promo Banners -->
