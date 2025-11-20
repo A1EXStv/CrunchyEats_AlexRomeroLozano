@@ -1,7 +1,5 @@
 <?php
-// =======================================================
-//   PUNTO DE ENTRADA PRINCIPAL DEL MVC (index.php)
-// =======================================================
+session_start();
 
 // Cargar automáticamente los controladores y modelos
 spl_autoload_register(function ($class) {
