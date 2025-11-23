@@ -31,7 +31,7 @@
             <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <?php
-        $chunks = array_chunk($productos, 4); // Cada slide 4 productos
+        $chunks = array_chunk($productos, 4);
         foreach ($chunks as $index => $slide) {
             $active = $index === 0 ? 'active' : '';
             echo "<div class='carousel-item $active'><div class='row'>";
@@ -42,7 +42,6 @@
                         <img src='{$producto['imagen']}' alt='{$producto['nombre']}' class='product-image'>
                         <div class='product-info'>
                             <h5>{$producto['nombre']}</h5>
-                            <p class='small mb-2'>{$producto['descripcion']}</p>
                             <div class='product-price'>\${$producto['precio']}</div>
                             <button class='btn-add-cart'>Añadir al carrito</button>
                         </div>
