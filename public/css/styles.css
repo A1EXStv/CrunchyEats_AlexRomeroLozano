@@ -140,39 +140,61 @@
     font-weight: bolder;
 }
 .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #FFFFFF;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     transition: transform 0.3s;
+    height: 350px; /* altura uniforme de todas las cards */
 }
 .product-image {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    max-height: 180px;  /* no demasiado alta */
+    object-fit: contain;  /* mantiene proporción y recorta si hace falta */
+    display: block;
 }
 .product-info {
     padding: 15px;
-    background-color:#FFFFFF;
     color: #000000;
+    flex-grow: 1;           /* ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+.product-info h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2em;      /* altura de línea */
+    max-height: 2.4em;       /* 2 líneas x line-height */
+    overflow: hidden;        /* oculta el exceso */
+    text-overflow: ellipsis; /* muestra … al final */
+}
 .product-price {
     font-size: 20px;
     font-weight: bold;
-    color:#FF640B;
+    color: #FF640B;
+    margin-bottom: 10px;
 }
-
 .btn-add-cart {
-    background-color:#FF640B;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 8px 20px;
     width: 100%;
-    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+.btn-add-cart:hover {
+    background-color: #FF640B;
+}
+
+
 
         /* Promo Cards */
         .promo-card {
