@@ -62,189 +62,105 @@
 </div>
     </section>
 
-    <!-- Promo Banners -->
-    <section class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="promo-card promo-teal">
-                        <div>
-                            <h3>Descubre la esencia de las ramas jóvenes</h3>
-                            <span class="badge-discount">20% DSCTO</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=150&h=100&fit=crop" alt="Ramen" class="img-fluid rounded mt-3">
+
+    <section class="container my-5">
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="anime-card">
+                    <div class="anime-img">
+                        <img src="public/img/pokemon_carta.png" alt="Pokemon"></a>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="promo-card promo-green">
-                        <div>
-                            <h3>Triunfarás en un mes de ramas</h3>
-                            <span class="badge-discount" style="background: red;">PRONTO</span>
-                        </div>
-                        <div class="mt-3">
-                            <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=100&h=80&fit=crop" alt="Ramen" class="img-fluid rounded d-inline me-2">
-                            <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=100&h=80&fit=crop" alt="Ramen" class="img-fluid rounded d-inline">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="promo-card promo-lime">
-                        <div>
-                            <h3>Conviértete en cazador de demonios</h3>
-                            <span class="badge-discount">15% + 5% OFF</span>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=150&h=100&fit=crop" alt="Ramen" class="img-fluid rounded mt-3">
+                    <div class="anime-body">
+                        <h4 class="anime-title">Compra Pokémon</h4>
+                        <p class="anime-desc">Ash, Pikachu y sus amigos están listos</p>
                     </div>
                 </div>
             </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="anime-card">
+                    <div class="anime-img">
+                    <a href="#"><img src="public/img/evangelion_carta.png" alt="Evangelion"></a>
+                    </div>
+                    <div class="anime-body">
+                        <h4 class="anime-title">Compra Evangelion</h4>
+                        <p class="anime-desc">Asuka y Rei te esperan para cumplir la misión</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="anime-card">
+                    <div class="anime-img">
+                        <a href="#"><img src="public/img/digimon_carta.png" alt="YuYu Hakusho"></a>
+                    </div>
+                    <div class="anime-body">
+                        <h4 class="anime-title">Compra Digimon</h4>
+                        <p class="anime-desc">Agumon y Tai te espera para pelear y salvar a los humanos</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- New Products -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2>Nuevos productos</h2>
+<section class="two-card-section">
+    <div class="container"> <!-- reutilizamos el mismo contenedor que la sección de 3 tarjetas -->
+        <div class="two-card-row">
+            <div class="two-card-col">
+                <div class="two-card">
+                    <div class="two-card-image">
+                        <img src="public/img/yuyu_carta_dos.png" alt="Imagen 1">
+                    </div>
+                    <div class="two-card-content">
+                        <h4 class="two-card-title">Título Tarjeta 1</h4>
+                        <p class="two-card-desc">Descripción de la primera tarjeta, manteniendo el estilo homogéneo.</p>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="product-card position-relative">
-                        <span class="badge-new">New</span>
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Combo KIMETSU</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor camarón</p>
-                            <div class="product-price">$8.00</div>
-                            <button class="btn-add-cart">Comprar por series</button>
-                        </div>
+            <div class="two-card-col">
+                <div class="two-card">
+                    <div class="two-card-image">
+                        <img src="public/img/demon_carta_dos.png" alt="Imagen 2">
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-card position-relative">
-                        <span class="badge-new">New</span>
-                        <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Combo EVANGELION</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor res</p>
-                            <div class="product-price">$8.00</div>
-                            <button class="btn-add-cart">Comprar por series</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product-card position-relative">
-                        <span class="badge-new">New</span>
-                        <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Combo JUJU JAMGOKEN</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor miso</p>
-                            <div class="product-price">$8.00</div>
-                            <button class="btn-add-cart">Comprar por series</button>
-                        </div>
+                    <div class="two-card-content">
+                        <h4 class="two-card-title">Título Tarjeta 2</h4>
+                        <p class="two-card-desc">Descripción de la segunda tarjeta, manteniendo el mismo estilo.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- More Products -->
-    <section class="py-5">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2>Comprar por series</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="product-card position-relative">
-                        <span class="badge-new">New</span>
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Ramen primicia</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor pollo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card position-relative">
-                        <span class="badge-new">New</span>
-                        <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Ramen picón</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor picante</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card position-relative">
-                        <span class="badge-new">New</span>
-                        <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Nuevadon</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor vegetales</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="product-card">
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop" alt="Ramen" class="product-image">
-                        <div class="product-info">
-                            <h5>Ramen especial</h5>
-                            <p class="small mb-2">Fideos Instantáneos sabor curry</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Brands Section -->
-    <section class="brands-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Comprar por series</h2>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #FF6B35;">NARUTO</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #E74C3C;">FAIRYTAIL</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #9B59B6;">HUNTER X HUNTER</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #E67E22;">DRAGON BALL</span>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center mt-3">
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #3498DB;">BLEACH</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #8B4513;">ONE PIECE</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #2ECC71;">BOKU NO HERO</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #34495E;">DEMON SLAYER</span>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center mt-3">
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #E91E63;">JUJU JAMGOKEN</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #00BCD4;">ONE PUNCH MAN</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #673AB7;">CHAINSAW MAN</span>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                    <span class="brand-logo d-inline-block" style="font-weight: bold; font-size: 24px; color: #795548;">SHANGRI-LA FRONTIER</span>
-                </div>
-            </div>
+   <section class="brands-section">
+    <div class="container">
+        <div>
+            <h3>Comprar por Series</h3>
         </div>
-    </section>
+        <div class="row g-5">
+            <?php
+            foreach ($series as $serie) {
+                echo "
+                <div class='col-md-3 col-sm-6'>
+                    <div class='brand-logo'>
+                        <img src='{$serie['imagen']}' alt='{$serie['nombre']}' class='product-image'>
+                    </div>
+                </div>
+                ";
+            }
+            echo "</div></div>";
+        ?>
+        </div>
+    </div>
+</section>
+
 
     <!-- Features -->
     <section class="features-section">
@@ -254,69 +170,35 @@
                 <div class="col-md-4">
                     <div class="feature-box">
                         <div class="feature-icon">
-                            <i class="fas fa-box"></i>
+                            <i class="fa-solid fa-gift" style="color: #ff640b;"></i>
                         </div>
-                        <h5>Orden Garantizada</h5>
-                        <p>Volvemos a enviar una orden que aún no haya llegado o te devolvemos la compra.</p>
+                        <h5>Ofertas Constantes</h5>
+                        <p>Ofertas activas cada día.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
                         <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
+                            <i class="fa-solid fa-lock" style="color: #fab818;"></i>
                         </div>
                         <h5>Compra Segura</h5>
-                        <p>Si no te llega lo que compraste, te devolvemos tu dinero.</p>
+                        <p>Tu privacidad es nuestra mayor prioridad. Si necesitas asistencia, contacta con nuestro personal de soporte.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
                         <div class="feature-icon">
-                            <i class="fas fa-truck"></i>
+                            <i class="fa-regular fa-thumbs-up" style="color: #2abdbb;"></i>
                         </div>
-                        <h5>Llevando ramen desde 2023</h5>
-                        <p>Tenemos más de un año llevando los mejores fideos a toda Latinoamérica.</p>
+                        <h5>Licencias Oficiales</h5>
+                        <p>Tenemos contacto directo con tus licencias y franquicias favoritas. Todos nuestros productos cuentan con su licencia oficial.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>Nosotros</h5>
-                    <a href="#">Quiénes somos</a>
-                    <a href="#">Trabaja con nosotros</a>
-                    <a href="#">Términos y condiciones</a>
-                </div>
-                <div class="col-md-3">
-                    <h5>Productos</h5>
-                    <a href="#">Comprar</a>
-                    <a href="#">Tienda oficial</a>
-                    <a href="#">Vender</a>
-                </div>
-                <div class="col-md-3">
-                    <h5>Ayuda</h5>
-                    <a href="#">Comprar</a>
-                    <a href="#">Vender</a>
-                    <a href="#">Resolución de problemas</a>
-                </div>
-                <div class="col-md-3">
-                    <h5>Redes sociales</h5>
-                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                </div>
-            </div>
-            <hr style="border-color: #444;">
-            <div class="text-center py-3">
-                <p class="mb-0">&copy; 2024 OpenManga. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    <?php include __DIR__ . '/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
