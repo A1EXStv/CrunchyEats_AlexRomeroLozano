@@ -7,11 +7,75 @@
     font-family: 'Lato', sans-serif;
     background-color: #f5f5f5;
 }
+#body-footer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  RESPONSIVES */
+/*  NAV */
+@media (max-width: 768px) {
+    .search-wrapper {
+        margin: 15px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .navbar-custom .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+}
+
+/* ------------------- FOOTER ------------------- */
+@media (max-width: 768px) { /* unificamos los rangos 768 y 767 */
+    .footer-crunchyroll {
+        padding: 30px 0 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-icons {
+        margin-bottom: 20px;
+        justify-content: flex-start;
+    }
+}
+
+/* ------------------- BRAND LOGO / HOME ------------------- */
+@media (max-width: 768px) {
+    .brand-logo img {
+        width: 100%;
+        max-width: 200px; /* opcional, para que no estiren demasiado */
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-logo img {
+        height: 160px;
+    }
+}
 
 
 /* NAVBAR */
-
-/* Top Navbar */
 .top-banner {
     background-color: #000000;;
     color: white;
@@ -27,8 +91,6 @@
     text-decoration: none;
     font-weight: 600;
 }
-
-/* Main Navbar */
 .navbar-custom {
     background-color:#000000;
     padding: 15px 0;
@@ -47,8 +109,6 @@
     width: 200px;
     max-width: 200px;
 }
-
-/* Search Bar */
 .search-wrapper {
     flex-grow: 1;
     max-width: 600px;
@@ -70,8 +130,6 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-/* Icons */
 .nav-icons {
     display: flex;
     gap: 120px;
@@ -86,8 +144,6 @@
 .nav-icon:hover {
     color:#FF640B;
 }
-
-/* Bottom Nav */
 .bottom-nav {
     background-color:#141519;
     padding: 15px 0;
@@ -104,32 +160,71 @@
     color:#FF640B;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .search-wrapper {
-        margin: 15px 0;
-        max-width: 100%;
-    }
 
-    .navbar-custom .container {
-        flex-wrap: wrap;
-    }
 
-    .nav-icons {
-        margin-top: 10px;
-    }
+
+
+
+/* Footer */
+.footer-crunchyroll {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 0 30px;
+}
+.footer-title {
+    color: #ff6b35;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links li {
+    margin-bottom: 12px;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #ff6b35;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #1a1a1a;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+.social-icon:hover {
+    background-color: #ff6b35;
+    color: #ffffff;
 }
 
-
 /* Home */
-
-/* Hero Section */
 .hero-section img {
     width: 100%;   /* Se ajusta al ancho del contenedor */
     height: auto;  /* Mantiene la proporción */
     display: block; /* Evita espacio abajo de la imagen */
 }
-/* Product Cards */
 .cabecera-products-section{
     display: flex;
     justify-content: space-between;
@@ -193,327 +288,134 @@
 .btn-add-cart:hover {
     background-color: #FF640B;
 }
-
-
-
-        /* Promo Cards */
-        .promo-card {
-            border-radius: 12px;
-            padding: 30px;
-            color: white;
-            margin-bottom: 20px;
-            min-height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .promo-card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-
-        .badge-discount {
-            background-color: white;
-            color:#1a1a1a;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        .badge-new {
-            background-color:#FF640B;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-
-        /* Brands Section */
-        .brands-section {
-            background-color: #fff;
-            padding: 40px 0;
-        }
-
-        .brand-logo {
-            max-width: 120px;
-            height: 60px;
-            object-fit: contain;
-            margin: 15px;
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.3s;
-        }
-
-        .brand-logo:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-        }
-
-        /* Features Section */
-        .features-section {
-            background-color: #f9f9f9;
-            padding: 50px 0;
-        }
-
-        .feature-box {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .feature-icon {
-            font-size: 48px;
-            color:#FF640B;
-            margin-bottom: 15px;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--dark-bg);
-            color: white;
-            padding: 40px 0 20px;
-        }
-
-        .footer h5 {
-            color:#FF640B;
-            margin-bottom: 20px;
-        }
-
-        .footer a {
-            color: #ccc;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .footer a:hover {
-            color:#FF640B;
-        }
-
-        /* Carousel customization */
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 5%;
-            opacity: 0.8;
-        }
-
-        .carousel-control-prev:hover,
-        .carousel-control-next:hover {
-            opacity: 1;
-        }
-
-        .carousel-indicators {
-            bottom: -40px;
-        }
-
-        .carousel-indicators button {
-            background-color:#FF640B;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    font-family: Arial, sans-serif;
+.promo-card {
+    border-radius: 12px;
+    padding: 30px;
     color: white;
+    margin-bottom: 20px;
+    min-height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-.container {
-    text-align: center;
+.promo-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.brands-section {
+    margin-top: 100px;
+}
+.brands-section h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.brand-logo {
+    overflow: hidden;
+    padding: 0;
+    height: 100%;
+}
+.brand-logo img {
     width: 100%;
-    max-width: 350px;
+    height: 200px;       /* ← AJUSTA AQUÍ SI QUIERES CAMBIAR ALTURA */
+    object-fit: contain;   /* Se recortan sin deformarse */
+    display: block;
 }
-
-.logo img {
-    width: 180px;
-    margin-bottom: 25px;
+.anime-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
-
-h1 {
-    font-size: 26px;
-    margin-bottom: 40px;
-    font-weight: 500;
-}
-
-input {
+.anime-img img {
     width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #FF8200;
-    padding: 12px 5px;
-    margin-bottom: 25px;
-    color: white;
-    outline: none;
-    font-size: 15px;
+    height: 400px;     /* ← IMPORTANTE */
+    object-fit: cover; /* ← RECORTA SIN DEFORMAR */
+    display: block;
 }
-
-input::placeholder {
-    color: #bbb;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #fff;
-    background: transparent;
+.anime-body {
+    background: #000;
     color: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
+    padding: 15px;
+    flex-grow: 1;
 }
-
-.btn:hover {
-    background-color: #FF8200;
-    border-color: #FF8200;
+.anime-title {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 1.2rem;
+    height: 28px;
+    overflow: hidden;
 }
-
-.crear-cuenta {
-    margin-top: 25px;
-    font-size: 14px;
-    color: #FF8200;
-    cursor: pointer;
+.anime-desc {
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    overflow: hidden;
+    opacity: 0.8;
 }
-
-.crear-cuenta:hover {
-    text-decoration: underline;
-} */
-
-
-
-
-
-
-
-
-
-
+.two-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* margen entre tarjetas, similar a la sección de 3 tarjetas */
+    justify-content: center; /* centrado horizontal si hay espacio extra */
+}
+.two-card-col {
+    flex: 1 1 calc(50% - 20px); /* ancho 50% menos la mitad del gap */
+    max-width: 480px;           /* opcional: limitar el ancho máximo */
+}
+.two-card {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.two-card-image img {
+    width: 100%;
+    height: 300px; /* reducido respecto a las 3 tarjetas */
+    object-fit: cover;
+    display: block;
+}
+.two-card-content {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    flex-grow: 1;
+}
+.two-card-title {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 1.2rem;
+    height: 28px;
+    overflow: hidden;
+}
+.two-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    height: 2.2rem;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.features-section h2 {
+    font-weight: bolder;
+    font-size: 48px;
+}
+.feature-box {
+    text-align: center;
+    padding: 20px;
+}
+.feature-box h5{
+    font-weight: bolder;
+}
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
