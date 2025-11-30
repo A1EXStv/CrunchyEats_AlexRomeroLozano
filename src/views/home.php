@@ -24,7 +24,7 @@
         <div class="container">
             <div class="cabecera-products-section mb4">
                 <h2>Descuentos Navideños</h2>
-                <a href="#" class="text-decoration-none">Ver todo →</a>
+                <a href="#" class="vertodo">Ver todo →</a>
             </div>
             
             <!-- Carousel -->

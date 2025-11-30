@@ -23,6 +23,9 @@
     <nav class="navbar-custom">
         <div class="container">
             <div class="navbar-custom2">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img class="navbar-logo" src="/CrunchyEats_AlexRomeroLozano/public/img/logo.png" alt="Logo CrunchyEats">
@@ -73,6 +76,31 @@
         </div>
     </nav>
 
+
+    <!-- Menú desplegable mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Carta</a></li>
+            <li><a href="#">Contacta</a></li>
+            <li><a href="<?php echo isset($_SESSION['usuario']) ? 'index.php?controller=Usuario&action=perfil' : 'index.php?controller=Auth&action=login'; ?>">Mi Cuenta</a></li>
+        </ul>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav"></nav>
+
+<script>
+        // Toggle menú mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
